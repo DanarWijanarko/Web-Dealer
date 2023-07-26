@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700;800;900&display=swap");
+
+:root {
+    --primary: #1b2223;
+    --secondary: #3a4f50;
+    --sub: #0ef6cc;
+    --light: #f4fefd;
+}
+
+::selection {
+    background: var(--sub);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Poppins", sans-serif;
+    user-select: none;
+}
+
+body {
+    background-color: var(--primary);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.login-container {
+    background-color: var(--light);
+    width: 400px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(255, 255, 255, 0.25);
+}
+
+.login-container img {
+    max-width: 100%;
+    filter: brightness(50%) blur(1px);
+    object-fit: cover;
+}
+
+.login-container h1 {
+    position: absolute;
+    font-size: 32.5px;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    color: var(--light);
+    text-align: center;
+}
+
+.login-container span {
+    font-size: 35px;
+    font-weight: 700;
+    margin-left: 25px;
+    position: relative;
+}
+
+.login-container span::after {
+    content: "";
+    background-color: var(--sub);
+    position: absolute;
+    height: 5px;
+    width: 40px;
+    left: 0;
+    bottom: 1px;
+    border-radius: 10px;
+}
+
+.login-container form {
+    display: grid;
+    gap: 35px;
+    place-items: center;
+    padding: 25px;
+}
+
+.login-container form .text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 300px;
+    background-color: var(--sub);
+    position: relative;
+}
+
+.login-container form .text-container i {
+    margin: 15px;
+    font-size: 25px;
+}
+
+.login-container form .text-container input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: var(--light);
+    font-size: 18px;
+}
+
+.login-container form .text-container .under::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 82.75%;
+    background: #b8b8b8;
+    left: 51.9px;
+    bottom: 0;
+}
+
+.login-container form .text-container .under::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 82.75%;
+    background: linear-gradient(to right, #0ef6cc 50%, #b8b8b8 100%);
+    left: 51.9px;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.5s ease;
+}
+
+.login-container form .text-container input:focus ~ .under::after {
+    transform: scaleX(1);
+}
+
+.login-container form button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: var(--sub);
+    color: var(--primary);
+    height: 35px;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: 900;
+    width: 150px;
+    transition: 300ms ease;
+}
+
+.login-container form button:hover {
+    background-color: #0fb899;
+}
+
+.login-container .no-acc {
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 20px;
+    color: var(--primary);
+}
+
+.login-container .no-acc a {
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--sub);
+    transition: 300ms ease;
+}
+
+.login-container .no-acc a:hover {
+    color: #0fb899;
+}
+
+.mb-n2 {
+    margin-bottom: -0.8rem !important;
+    margin-left: 25px !important;
+    margin-right: 25px !important;
+    font-weight: 700;
+}
+
+.alert {
+    color: var(--primary);
+}
+
+.alert-success a {
+    float: right;
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.alert-success a:hover {
+    color: #475253;
+}
+
+.alert-success a::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid var(--primary);
+    transform: scaleX(0);
+    transition: 200ms ease-in-out;
+}
+
+.alert-success a:hover:after {
+    transform: scaleX(1);
+}

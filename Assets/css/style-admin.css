@@ -1,0 +1,76 @@
+/*----------------------Sidebar Start----------------------*/
+.sidebar-divider {
+    background-color: #f8f8f8;
+    height: 1px;
+}
+.myside {
+    margin-top: -15px;
+}
+/*----------------------Sidebar End----------------------*/
+
+/*----------------------Tables Start----------------------*/
+#no {
+    width: 50px;
+}
+#img {
+    width: 150px;
+}
+#img img {
+    width: 100px;
+}
+#action {
+    text-align: center;
+    width: 80px;
+    padding-left: 15px;
+}
+.myAlert {
+    width: 70%;
+    text-align: center;
+    font-weight: 700;
+}
+table #action a {
+    color: var(--primary);
+}
+table #action a:hover {
+    color: #656666;
+}
+@media (max-width: 450px) {
+    .myAlert {
+        width: 50%;
+    }
+}
+/*----------------------Tables End----------------------*/
+
+/*----------------------Update Data Products Start----------------------*/
+.img-thumbnail {
+    width: 280px;
+}
+/*----------------------Update Data Products Start----------------------*/
+
+/*----------------------Form Start----------------------*/
+/* .newData {
+    margin: 0 10rem;
+}
+
+.newData label {
+    font-weight: 600;
+}
+
+@media screen and (max-width: 950px) {
+    .newData {
+        margin: 0 8rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .newData {
+        margin: 0 5rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .newData {
+        margin: 0 25px;
+    }
+} */
+/*----------------------Form End----------------------*/
